@@ -10,4 +10,7 @@ pipeline {
       }
     }
   }
+  environment {
+    FILE = 'p1.txt'
+  }
 }
