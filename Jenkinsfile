@@ -6,7 +6,7 @@ pipeline {
         FILE = 'p1.txt'
       }
       steps {
-        readFile(file: '$FILE', encoding: 'UTF-8')
+        readFile(file: '${FILE}', encoding: 'UTF-8')
       }
     }
   }
