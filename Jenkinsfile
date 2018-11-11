@@ -1,9 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('Pobierz TERYT') {
+    stage('Get a file') {
+      environment {
+        FILE = 'p1.txt'
+      }
       steps {
-        sh 'mkdir ddd'
+        readFile(file: '$FILE', encoding: 'UTF-8')
       }
     }
   }
